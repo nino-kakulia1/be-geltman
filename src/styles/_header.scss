@@ -1,3 +1,20 @@
 .header {
-  height: 100px;
+  background-color: gray;
+  padding: 29px 119px;
+  width: 1366px;
+  height: 110px;
+
+  &__nav-bar {
+    display: flex;
+  }
+  &__logo {
+    width: 32px;
+    height: 32px;
+    margin-left: 500px;
+  }
+  &__button-menu {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 29px;
+  }
 }
