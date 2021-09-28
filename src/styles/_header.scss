@@ -1,20 +1,12 @@
 .header {
-  background-color: gray;
-  padding: 29px 119px;
-  width: 1366px;
+  background-color: #ffffff;
+  padding: 0 119px;
   height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  &__nav-bar {
-    display: flex;
-  }
-  &__logo {
-    width: 32px;
-    height: 32px;
-    margin-left: 500px;
-  }
-  &__button-menu {
-    width: 32px;
-    height: 32px;
-    margin-bottom: 29px;
+  &__icons-images {
+    margin-right: 25px;
   }
 }
