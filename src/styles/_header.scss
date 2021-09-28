@@ -1,12 +1,18 @@
 .header {
-  background-color: #ffffff;
   padding: 0 119px;
   height: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  width: 100%;
 
-  &__icons-images {
+  &__action-icon {
     margin-right: 25px;
   }
+}
+
+.hero-section {
+  background-image: url('/public/hero-section.png');
+  height: 100vh;
 }
