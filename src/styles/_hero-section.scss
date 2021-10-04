@@ -48,19 +48,10 @@
   }
 
   &__description {
-    font-family: $font-seconday;
+    font-family: $font-secondary;
     color: #ffffff;
     font-size: 16px;
     line-height: 28px;
     margin-bottom: 30px;
-  }
-  &__button {
-    width: 175px;
-    height: 55px;
-    padding: 0;
-    font-family: $font-seconday;
-    background-color: transparent;
-    border: 1px solid white;
-    color: #ffffff;
   }
 }

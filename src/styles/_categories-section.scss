@@ -1,0 +1,55 @@
+.categories-section {
+  margin-top: 153px;
+  padding: 0 120px;
+
+  &__title {
+    font-family: $font-main;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 32px;
+    display: block;
+  }
+
+  &__cards {
+    display: flex;
+  }
+
+  &__card {
+    width: 364px;
+    height: 256px;
+    position: relative;
+    background-image: url('/public/category-clothes.png');
+    &:nth-child(2) {
+      background-image: url('/public/category-shoes.png');
+      margin-left: 20px;
+    }
+    &:last-child {
+      background-image: url('/public/category-accsessories.png');
+      margin-left: 20px;
+    }
+  }
+
+  &__button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    font-weight: normal;
+    //
+    backdrop-filter: blur(4px);
+    width: 161px;
+    height: 45px;
+    margin: 0 auto;
+    //
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    //
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 32px;
+  }
+}

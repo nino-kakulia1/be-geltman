@@ -3,5 +3,11 @@
 
 @import 'reset';
 @import 'variables';
+
+// Commons
+@import 'common';
+// Sections
 @import 'header';
 @import 'hero-section';
+@import 'express-section';
+@import 'categories-section';

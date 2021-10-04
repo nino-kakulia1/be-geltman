@@ -1,0 +1,22 @@
+.express-section {
+  display: flex;
+  margin-top: 110px;
+  padding: 0 120px;
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-family: $font-main;
+    text-transform: uppercase;
+  }
+
+  &__wrapper:last-child {
+    margin-left: 34px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 79px;
+  }
+}

@@ -1,0 +1,14 @@
+.button {
+  width: 175px;
+  height: 55px;
+  padding: 0;
+  font-family: $font-secondary;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+
+  &--black {
+    border: 1px solid #333333;
+    color: #333333;
+  }
+}
