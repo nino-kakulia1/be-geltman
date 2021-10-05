@@ -12,6 +12,7 @@
 
   &__cards {
     display: flex;
+    cursor: pointer;
   }
   &__card {
     &:nth-child(2) {
@@ -58,5 +59,18 @@
     //
     color: #ffffff;
     background-color: #333333;
+  }
+
+  &__button {
+    margin: 0 auto;
+    width: 175px;
+    height: 55px;
+    font-size: 16px;
+    font-family: $font-main;
+    background-color: transparent;
+    //
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
