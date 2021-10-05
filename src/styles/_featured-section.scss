@@ -1,0 +1,62 @@
+.featured-section {
+  padding: 0 120px;
+  margin-top: 153px;
+
+  &__title {
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-family: $font-main;
+    //
+    display: block;
+  }
+
+  &__cards {
+    display: flex;
+  }
+  &__card {
+    &:nth-child(2) {
+      margin-left: 15px;
+    }
+    &:nth-child(3) {
+      margin-left: 15px;
+    }
+    &:nth-child(4) {
+      margin-left: 15px;
+    }
+  }
+
+  &__description {
+    width: 270px;
+    height: 220px;
+  }
+
+  &__shirts {
+    font-size: 14px;
+    color: #333333;
+    margin-top: 20px;
+  }
+
+  &__cotton {
+    margin-bottom: 12px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  &__about {
+    font-size: 16px;
+    color: #919191;
+  }
+
+  &__price {
+    width: 71px;
+    height: 32px;
+    align-items: center;
+    margin-left: auto;
+    //
+    justify-content: center;
+    display: flex;
+    //
+    color: #ffffff;
+    background-color: #333333;
+  }
+}
