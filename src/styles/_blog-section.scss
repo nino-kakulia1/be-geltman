@@ -1,0 +1,96 @@
+.blog-section {
+  padding: 0 120px;
+  margin-top: 193px;
+
+  &__title {
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-family: $font-main;
+    text-transform: uppercase;
+    //
+    display: block;
+  }
+  &__connteiner {
+    display: flex;
+  }
+
+  &__posts {
+    margin-left: 36px;
+  }
+
+  &__info {
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: #333333;
+    opacity: 0.5;
+    //
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: $font-main;
+    color: #333333;
+    opacity: 1;
+  }
+
+  &__description {
+    font-size: 16px;
+    margin-bottom: 16px;
+    letter-spacing: 1.1px;
+    font-family: $font-secondary;
+
+    color: #333333;
+    line-height: 1.6;
+    opacity: 1;
+  }
+  &__read-now {
+    margin-top: 22px;
+    display: flex;
+  }
+  &__read-duration {
+    margin-left: auto;
+    color: #333333;
+    opacity: 0.5;
+    font-family: $font-secondary;
+  }
+  &__styles {
+    margin-top: 32px;
+    display: flex;
+    position: relative;
+  }
+
+  &__brands {
+    background-image: url('/public/styles.png');
+    width: 266px;
+    height: 301px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &:nth-child(2) {
+      background-image: url('/public/styles2.png');
+      margin-left: 19px;
+    }
+  }
+  .button-button {
+    position: absolute;
+    height: 50px;
+    width: 206px;
+    align-items: center;
+    color: white;
+    opacity: 1;
+    backdrop-filter: blur(4px);
+    display: flex;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: gray;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 32px;
+  }
+}
