@@ -1,0 +1,19 @@
+.copyright {
+  padding: 24px 120px;
+  background-color: #fcfcfc;
+  height: 28px;
+  display: flex;
+  align-items: center;
+
+  &__text {
+    font-size: 12px;
+    font-family: 'Lato';
+    color: #333333;
+    margin-right: 79px;
+    opacity: 0.64;
+  }
+}
+
+.copyright-paymethod {
+  margin-left: auto;
+}
