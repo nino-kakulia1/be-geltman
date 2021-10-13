@@ -2,14 +2,6 @@
   padding: 0 120px;
   margin-top: 153px;
 
-  &__title {
-    margin-bottom: 32px;
-    font-size: 32px;
-    font-family: $font-main;
-    //
-    display: block;
-  }
-
   &__cards {
     display: flex;
     cursor: pointer;
