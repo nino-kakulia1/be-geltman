@@ -86,10 +86,10 @@
 
   &__description {
     font-size: 16px;
-    font-family: $font-secondary;
     height: 155px;
     line-height: 30px;
     margin-bottom: 32px;
+    font-family: $font-secondary;
   }
 
   &__read-info {
@@ -103,10 +103,20 @@
     text-decoration: none;
     font-size: 14px;
     color: #333333;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.5;
+
+      .blog-post__icon {
+        margin-left: 23px;
+      }
+    }
   }
 
   &__icon {
     margin-left: 17px;
+    transition: margin-left 0.3s ease;
   }
 
   &__read-duration {

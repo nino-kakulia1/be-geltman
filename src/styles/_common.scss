@@ -7,9 +7,21 @@
   border: 1px solid white;
   color: white;
 
+  transition: all 0.3s linear;
+
+  &:hover {
+    background-color: white;
+    color: #333333;
+  }
+
   &--black {
     border: 1px solid #333333;
     color: #333333;
+
+    &:hover {
+      background-color: #333333;
+      color: white;
+    }
   }
 }
 
