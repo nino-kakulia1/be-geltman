@@ -1,8 +1,13 @@
 .express-section {
   display: flex;
+  flex-direction: column;
   margin-top: 110px;
   padding: 0 120px;
   cursor: pointer;
+
+  @media (min-width: $screen-tablet-small) {
+    flex-direction: column;
+  }
 
   &__wrapper:last-child {
     margin-left: 34px;

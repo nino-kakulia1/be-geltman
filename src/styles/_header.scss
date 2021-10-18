@@ -3,7 +3,6 @@ body {
 }
 
 .header {
-  padding: 0 119px;
   height: 110px;
   display: flex;
   justify-content: space-between;
@@ -12,14 +11,36 @@ body {
   position: absolute;
   width: 100%;
 
+  padding: 0 20px;
+
+  @media (min-width: $screen-mobile-medium) {
+    padding: 0 119px;
+  }
+
   &__logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    width: 100px;
+    @media (min-width: $screen-mobile-medium) {
+      width: 129px;
+    }
   }
 
+  &__actions {
+    display: none;
+
+    @media (min-width: $screen-mobile-medium) {
+      display: block;
+    }
+  }
   &__action-icon {
     margin-right: 25px;
     cursor: pointer;
+    transition: all opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
