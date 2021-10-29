@@ -1,24 +1,42 @@
 .categories-section {
-  margin-top: 153px;
-  padding: 0 120px;
+  padding: 0 30px;
+  margin-bottom: 30px;
+
+  @media (min-width: $screen-mobile-medium) {
+    padding: 0 120px;
+    margin-bottom: 120px;
+  }
 
   &__cards {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     cursor: pointer;
+
+    @media (min-width: $screen-mobile-medium) {
+      flex-direction: row;
+    }
   }
 
   &__card {
-    width: 364px;
+    width: 100%;
     height: 256px;
     position: relative;
     background-image: url('/public/category-clothes.png');
+    margin-bottom: 16px;
     &:nth-child(2) {
       background-image: url('/public/category-shoes.png');
-      margin-left: 20px;
+
+      @media (min-width: $screen-mobile-medium) {
+        margin-left: 20px;
+      }
     }
     &:last-child {
       background-image: url('/public/category-accsessories.png');
-      margin-left: 20px;
+
+      @media (min-width: $screen-mobile-medium) {
+        margin-left: 20px;
+      }
     }
   }
 

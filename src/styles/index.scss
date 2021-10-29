@@ -6,6 +6,13 @@
 
 // Commons
 @import 'common';
+
+body {
+  background-color: #fcfcfc;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 // Sections
 @import 'header';
 @import 'hero-section';
