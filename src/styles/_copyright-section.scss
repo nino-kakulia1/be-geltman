@@ -1,19 +1,44 @@
 .copyright {
-  padding: 24px 120px;
+  padding: 0 30px;
   background-color: #fcfcfc;
   height: 28px;
-  display: flex;
-  align-items: center;
+  display: block;
+
+  @media (min-width: $screen-tablet-medium) {
+    padding: 24px 120px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__text {
-    font-size: 12px;
+    font-size: 8px;
     font-family: 'Lato';
     color: #333333;
-    margin-right: 79px;
+    margin-top: 10px;
     opacity: 0.64;
+
+    @media (min-width: $screen-tablet-medium) {
+      margin-right: 79px;
+      font-size: 12px;
+    }
   }
 }
 
 .copyright-paymethod {
   margin-left: auto;
+}
+
+.paymethod-icon {
+  height: 14px;
+  width: 14px;
+  @media (min-width: $screen-tablet-medium) {
+    height: auto;
+    width: auto;
+  }
 }

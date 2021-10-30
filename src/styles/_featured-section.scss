@@ -1,31 +1,38 @@
 .featured-section {
   padding: 0 30px;
-  margin-bottom: 30px;
+  margin-bottom: 74px;
   cursor: pointer;
 
-  @media (min-width: $screen-mobile-medium) {
+  @media (min-width: $screen-tablet-medium) {
     padding: 0 120px;
-    margin-bottom: 74px;
+    margin-bottom: 110px;
   }
 
   &__cards {
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 
-    @media (min-width: $screen-mobile-medium) {
+    @media (min-width: $screen-tablet-medium) {
       flex-direction: row;
+      margin-bottom: 40px;
     }
   }
+
   &__image {
     width: 100%;
   }
+
   &__card {
-    margin-right: 15px;
     margin-bottom: 30px;
 
-    &:last-child {
-      margin-right: 0px;
+    @media (min-width: $screen-tablet-medium) {
+      margin-right: 15px;
+      margin-bottom: 0px;
+      &:last-child {
+        margin-right: 0px;
+      }
     }
   }
 

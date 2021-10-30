@@ -1,16 +1,23 @@
 .express-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 0 30px;
   margin-bottom: 50px;
   cursor: pointer;
 
-  @media (min-width: $screen-mobile-medium) {
+  @media (min-width: $screen-tablet-medium) {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: end;
     padding: 0 120px;
     margin-bottom: 110px;
+  }
+
+  &__wrapper:first-child {
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-tablet-medium) {
+      margin-bottom: 0px;
+    }
   }
 
   &__image {
@@ -18,8 +25,7 @@
   }
 
   &__wrapper:last-child {
-    margin-bottom: 50px;
-    @media (min-width: $screen-mobile-medium) {
+    @media (min-width: $screen-tablet-medium) {
       margin-left: 34px;
     }
   }
@@ -27,11 +33,6 @@
   &__button {
     display: block;
     margin: 0 auto;
-    margin-bottom: 50px;
     margin-top: 79px;
-
-    @media (min-width: $screen-mobile-medium) {
-      margin-bottom: 110px;
-    }
   }
 }
