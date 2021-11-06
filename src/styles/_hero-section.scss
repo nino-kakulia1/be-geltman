@@ -43,13 +43,21 @@
     transform: translate(-50%, -50%);
 
     @media (min-width: $screen-tablet-small) {
-      width: 600px;
+      width: 650px;
+      height: 290px;
+      padding: 30px;
     }
 
     @media (min-width: $screen-tablet-medium) {
       width: 908px;
       padding: 40px 230px;
       height: 329px;
+    }
+
+    @media (min-width: $screen-desktop-large) {
+      width: 1000px;
+      padding: 20px 230px;
+      height: 500px;
     }
   }
 
@@ -60,6 +68,10 @@
     font-size: 20px;
     margin-bottom: 16px;
     opacity: 0.8;
+
+    @media (min-width: $screen-desktop-large) {
+      font-size: 30px;
+    }
   }
 
   &__title {
@@ -79,5 +91,9 @@
     font-size: 16px;
     line-height: 28px;
     margin-bottom: 30px;
+
+    @media (min-width: $screen-desktop-large) {
+      font-size: 20px;
+    }
   }
 }

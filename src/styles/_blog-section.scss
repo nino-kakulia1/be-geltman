@@ -1,7 +1,15 @@
 .blog-section {
   padding: 0 30px;
 
+  @media (min-width: $screen-tablet-small) {
+    padding: 0 110px;
+  }
+
   @media (min-width: $screen-tablet-medium) {
+    padding: 0 120px;
+  }
+
+  @media (min-width: $screen-desktop-large) {
     padding: 0 120px;
   }
 
@@ -12,17 +20,44 @@
     text-transform: uppercase;
     //
     display: block;
+
     @media (min-width: $screen-tablet-medium) {
       margin-bottom: 32px;
       font-size: 32px;
+    }
+
+    @media (min-width: $screen-desktop-large) {
+      font-size: 40px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    @media (min-width: $screen-tablet-medium) {
+      width: 50%;
+      object-fit: cover;
+    }
+
+    @media (min-width: $screen-desktop-medium) {
+      width: auto;
+    }
+
+    @media (min-width: $screen-desktop-large) {
+      width: 50%;
+      object-fit: cover;
     }
   }
 
   &__content {
     background-color: #ffffff;
+
     @media (min-width: $screen-tablet-medium) {
-      width: 551px;
+      width: 50%;
       margin-left: 20px;
+    }
+    @media (min-width: $screen-desktop-large) {
+      width: 50%;
     }
   }
 
@@ -40,6 +75,11 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+
+    @media (min-width: $screen-tablet-small) {
+      flex-direction: row;
+    }
+
     @media (min-width: $screen-tablet-medium) {
       flex-direction: row;
       align-items: flex-start;
@@ -53,9 +93,26 @@
     width: 100%;
     background-size: cover;
     margin-bottom: 16px;
+
     @media (min-width: $screen-tablet-small) {
+      width: 300px;
+      margin-right: 10px;
+    }
+    @media (min-width: $screen-tablet-medium) {
+      margin-left: 19px;
+      height: 177px;
+      margin-bottom: 0px;
+    }
+
+    @media (min-width: $screen-desktop-medium) {
       margin-left: 19px;
       margin-bottom: 0px;
+      height: 300px;
+      width: 100%;
+    }
+
+    @media (min-width: $screen-desktop-large) {
+      height: 400px;
     }
 
     &:nth-child(2) {
@@ -86,6 +143,11 @@
     backdrop-filter: blur(4px);
     transform: translateX(-50%);
     bottom: 32px;
+
+    @media (min-width: $screen-tablet-medium) {
+      width: 100px;
+      height: 30px;
+    }
   }
 }
 
@@ -108,8 +170,16 @@
     margin-bottom: 18px;
     text-transform: uppercase;
 
+    @media (min-width: $screen-tablet-small) {
+      font-size: 20px;
+    }
+
     @media (min-width: $screen-tablet-medium) {
       font-size: 20px;
+    }
+
+    @media (min-width: $screen-desktop-large) {
+      font-size: 30px;
     }
   }
 
@@ -118,9 +188,19 @@
     line-height: 30px;
     margin-bottom: 24px;
     font-family: $font-secondary;
+
+    @media (min-width: $screen-tablet-small) {
+      font-size: 16px;
+    }
+
     @media (min-width: $screen-tablet-medium) {
       margin-bottom: 32px;
+      font-size: 14px;
       height: 155px;
+    }
+
+    @media (min-width: $screen-desktop-large) {
+      font-size: 20px;
     }
   }
 

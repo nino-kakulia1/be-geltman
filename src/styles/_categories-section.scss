@@ -13,6 +13,10 @@
     align-items: center;
     cursor: pointer;
 
+    @media (min-width: $screen-tablet-small) {
+      flex-direction: row;
+    }
+
     @media (min-width: $screen-tablet-medium) {
       flex-direction: row;
     }
@@ -28,9 +32,22 @@
     background-size: cover;
     background-position: center;
 
+    @media (min-width: $screen-tablet-small) {
+      width: 229px;
+      height: 256px;
+      margin-left: 10px;
+    }
+
     @media (min-width: $screen-tablet-medium) {
       margin-bottom: 0;
       margin-right: 20px;
+      width: 300px;
+      height: 300px;
+      margin-left: 0px;
+    }
+
+    @media (min-width: $screen-desktop-medium) {
+      width: 100%;
     }
 
     &:nth-child(2) {

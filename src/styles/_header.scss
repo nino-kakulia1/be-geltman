@@ -21,6 +21,10 @@
     @media (min-width: $screen-tablet-medium) {
       width: 129px;
     }
+
+    @media (min-width: $screen-desktop-large) {
+      width: 150px;
+    }
   }
 
   &__actions {
@@ -34,6 +38,10 @@
     margin-right: 25px;
     cursor: pointer;
     transition: all opacity 0.3s ease;
+
+    @media (min-width: $screen-desktop-large) {
+      width: 30px;
+    }
 
     &:hover {
       opacity: 0.5;
