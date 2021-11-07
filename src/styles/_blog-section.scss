@@ -44,8 +44,7 @@
     }
 
     @media (min-width: $screen-desktop-large) {
-      width: 50%;
-      object-fit: cover;
+      max-height: 870px;
     }
   }
 
@@ -56,6 +55,7 @@
       width: 50%;
       margin-left: 20px;
     }
+
     @media (min-width: $screen-desktop-large) {
       width: 50%;
     }
@@ -72,7 +72,6 @@
 
   &__related-posts {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 
@@ -94,29 +93,23 @@
     background-size: cover;
     margin-bottom: 16px;
 
-    @media (min-width: $screen-tablet-small) {
-      width: 300px;
-      margin-right: 10px;
-    }
-    @media (min-width: $screen-tablet-medium) {
-      margin-left: 19px;
-      height: 177px;
-      margin-bottom: 0px;
+    &:nth-child(2) {
+      background-image: url(/public/styles2.png);
     }
 
-    @media (min-width: $screen-desktop-medium) {
+    @media (min-width: $screen-tablet-small) {
+      width: 300px;
+      margin-left: 20px;
+    }
+
+    @media (min-width: $screen-tablet-medium) {
       margin-left: 19px;
       margin-bottom: 0px;
-      height: 300px;
-      width: 100%;
     }
 
     @media (min-width: $screen-desktop-large) {
-      height: 400px;
-    }
-
-    &:nth-child(2) {
-      background-image: url(/public/styles2.png);
+      padding: 0 16px;
+      margin-left: 20px;
     }
   }
 
@@ -132,8 +125,6 @@
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     //
-
-    //
     display: flex;
     justify-content: center;
     text-align: center;
@@ -146,6 +137,11 @@
 
     @media (min-width: $screen-tablet-medium) {
       width: 100px;
+      height: 30px;
+    }
+
+    @media (min-width: $screen-desktop-large) {
+      width: 200px;
       height: 30px;
     }
   }
