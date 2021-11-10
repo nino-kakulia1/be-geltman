@@ -32,11 +32,17 @@
 
 .copyright-paymethod {
   margin-left: auto;
+  display: flex;
+
+  @media (min-width: $screen-tablet-medium) {
+    display: flex;
+  }
 }
 
 .paymethod-icon {
   height: 14px;
   width: 14px;
+
   @media (min-width: $screen-tablet-medium) {
     height: auto;
     width: auto;
