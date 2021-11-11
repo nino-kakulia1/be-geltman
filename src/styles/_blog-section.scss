@@ -109,6 +109,10 @@
       height: 200px;
     }
 
+    @media (min-width: $screen-desktop-medium) {
+      height: 300px;
+    }
+
     @media (min-width: $screen-desktop-large) {
       padding: 0 10px;
       margin-left: 20px;
