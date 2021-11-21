@@ -39,11 +39,19 @@ module.exports = {
     // Generates an HTML file from a template
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
     new HtmlWebpackPlugin({
-      title: 'webpack Boilerplate',
+      title: 'Home',
       favicon: paths.src + '/images/favicon.png',
       template: paths.src + '/template.html', // template file
       filename: 'index.html', // output file
     }),
+
+    new HtmlWebpackPlugin({
+      title: 'Product page',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/product-page.html', // template file
+      filename: 'product-page.html', // output file
+    }),
+
 
     // ESLint configuration
     new ESLintPlugin({
