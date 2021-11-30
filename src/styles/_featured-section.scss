@@ -9,7 +9,7 @@
 
   @media (min-width: $screen-desktop-medium) {
     padding: 0 120px;
-    margin-bottom: 110px;
+    margin-bottom: 50px;
   }
 
   &__cards {
@@ -25,110 +25,6 @@
     @media (min-width: $screen-tablet-medium) {
       flex-direction: row;
       margin-bottom: 40px;
-    }
-  }
-
-  &__image {
-    width: 100%;
-  }
-
-  &__card {
-    margin-bottom: 30px;
-
-    @media (min-width: $screen-tablet-small) {
-      margin-right: 12px;
-    }
-
-    @media (min-width: $screen-tablet-medium) {
-      margin-right: 15px;
-      margin-bottom: 0px;
-
-      &:last-child {
-        margin-right: 0px;
-      }
-    }
-  }
-
-  &__shirts {
-    font-size: 14px;
-    color: #333333;
-    margin-top: 20px;
-
-    @media (min-width: $screen-tablet-small) {
-      font-size: 10px;
-    }
-
-    @media (min-width: $screen-tablet-medium) {
-      font-size: 14px;
-    }
-
-    @media (min-width: $screen-desktop-large) {
-      font-size: 25px;
-    }
-  }
-
-  &__cotton {
-    margin-bottom: 12px;
-    margin-top: 20px;
-    font-size: 18px;
-
-    @media (min-width: $screen-tablet-small) {
-      font-size: 15px;
-    }
-
-    @media (min-width: $screen-tablet-medium) {
-      font-size: 18px;
-    }
-    @media (min-width: $screen-desktop-large) {
-      font-size: 30px;
-    }
-  }
-
-  &__about {
-    font-size: 16px;
-    color: #919191;
-
-    @media (min-width: $screen-tablet-small) {
-      font-size: 10px;
-    }
-
-    @media (min-width: $screen-tablet-medium) {
-      font-size: 16px;
-    }
-
-    @media (min-width: $screen-desktop-large) {
-      font-size: 25px;
-    }
-  }
-
-  &__price {
-    width: 71px;
-    height: 32px;
-    align-items: center;
-    margin-left: auto;
-    //
-    justify-content: center;
-    display: flex;
-    //
-    color: #ffffff;
-    background-color: #333333;
-
-    @media (min-width: $screen-tablet-small) {
-      width: 71px;
-      height: 32px;
-    }
-    @media (min-width: $screen-tablet-medium) {
-      width: 71px;
-      height: 32px;
-    }
-    @media (min-width: $screen-desktop-medium) {
-      width: 57px;
-      height: 25px;
-    }
-
-    @media (min-width: $screen-desktop-large) {
-      width: 70px;
-      height: 35px;
     }
   }
 
