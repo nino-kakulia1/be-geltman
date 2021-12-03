@@ -52,6 +52,12 @@ module.exports = {
       filename: 'product-page.html', // output file
     }),
 
+    new HtmlWebpackPlugin({
+      title: 'Shop page',
+      favicon: paths.src + '/images/favicon.png',
+      template: paths.src + '/shop-page.html', // template file
+      filename: 'shop-page.html', // output file
+    }),
 
     // ESLint configuration
     new ESLintPlugin({
