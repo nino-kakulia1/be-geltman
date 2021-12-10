@@ -79,9 +79,14 @@
   &__arrow {
     cursor: pointer;
     margin-bottom: 20px;
+    transition: all 0.3s;
 
     &:last-child {
       margin-left: 32px;
+    }
+
+    &:hover {
+      transform: scale(0.9);
     }
   }
 }
@@ -192,6 +197,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s;
   color: #333333;
   width: 37px;
   height: 29px;
@@ -199,6 +205,11 @@
 
   @media (min-width: $screen-tablet-small) {
     margin-right: 24px;
+  }
+  &:hover {
+    background-color: #2d3436;
+    color: #ffffff;
+    transform: scale(0.9);
   }
 }
 
@@ -214,15 +225,6 @@
   text-transform: uppercase;
   font-family: $font-secondary;
   transition: color 0.3s;
-}
-
-.product-bradcrumb {
-  font-size: 14px;
-  color: #333333;
-  margin-bottom: 32px;
-  opacity: 0.65;
-  display: block;
-  font-family: $font-secondary;
 }
 
 .product-buy {
